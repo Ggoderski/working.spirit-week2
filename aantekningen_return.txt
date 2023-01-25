@@ -1,0 +1,45 @@
+
+
+class Demo{
+    static public void main(String[] ab){
+        
+        int a = 7;
+        Laptop p = new Laptop();
+        p.kapot(5); // meegeven
+        
+        Persoon piet = new Persoon();
+        Persoon joost = piet;
+        int zomaareennummer = p.aanzetten();
+        Persoon temp = p.noemEigenaar();
+    }
+}
+
+class Laptop{
+    String merk = "Asus";
+    Persoon kees = new Persoon();
+    int aanzetten() {
+        System.out.println("de laptop doet het");
+        int getal = 7;
+        return getal;
+    }
+    boolean kapot(int a) {
+        System.out.println("checken of hij kapot is");
+        return true;
+    }
+    String noemMerk(){
+        System.out.println("we willen het merk weten");
+        String test = "test";
+        return merk;
+    }
+    Persoon noemEigenaar(){
+        
+//        return kees;
+        return new Persoon();
+    }
+    
+    
+}
+
+class Persoon{
+    
+}

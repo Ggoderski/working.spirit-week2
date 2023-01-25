@@ -1,0 +1,13 @@
+class Huis{
+    	
+	
+
+		
+		
+		
+	public static void main(String[] args) {
+
+		Huis.jouHuis = new Huis();
+
+	}
+}    

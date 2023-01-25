@@ -1,0 +1,47 @@
+// casten
+// instanceof
+// static		waardes zijn gelijk maar kan wel veranderen
+// final		waardes die nooit veranderen
+// constructor
+
+// document
+
+
+class Demo{
+    static public void main(String[] ab){
+        Dier dier = new Konijn();
+        if(dier instanceof Tijger) {
+            Tijger konijn = (Tijger)dier;
+        }else {
+            System.out.println("Dit was geen tijger");
+        }
+        Planeet p1 = new Planeet();
+        p1.naam = "aarde";
+//        Planeet.naam = "kan niet";
+        p1.universum = 7;
+        Planeet.universum = 9;
+    }
+}
+class Planeet{
+    Planeet(){
+        super();
+    }
+    String naam;    // object variabele
+    static int universum = 3;  // klasse variabele
+}
+
+
+class Dier{
+    int aantalpoten = 4;
+    Dier(){
+        System.out.println("er wordt een dier gemaakt");
+    }
+    
+}
+class Konijn extends Dier{
+    
+}
+class Tijger extends Dier{
+    
+}
+class OlieTanker{}

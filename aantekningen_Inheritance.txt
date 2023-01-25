@@ -1,0 +1,64 @@
+class Demo{  
+    public static void main(String[] args){
+        System.out.println("Inheritance");
+
+		//referentie type // objecttype moet covarient zijn van referentie type
+		Dier dier1 = new Konijn(); // dit kan door 'extends'
+		dier1.aantalOgen = 25;
+		// dier1.staart = 15; // compileer fout
+
+		Konijn k = new Konijn();
+		k.aantalOgen = 2;
+		k.staart = 1;
+
+		Dier dier2 = new Konijn();
+		dier2.aantalOgen = 4;
+		// dier2.staart = 4; // compileer fout
+
+		DierenAmbulance da = new DierenAmbulance();
+		da.ophalen(new Dier());
+		da.ophalen(new Konijn());
+		Dier[] dieren = {new Konijn()};
+		
+	}
+}
+
+
+class Dier{
+	
+	int aantalOgen;
+}
+
+class Konijn extends Dier{
+	// class heeft een eigenschap en wordt uitgebreid met andere class
+	
+	int staart;
+
+}
+
+class DierenAmbulance{
+
+	void ophale(Dierdier) {
+		
+	}
+}
+
+// Konijn Dier = Ja
+// Konijn Konijn = ja
+// Dier Konijn = Hoeft niet / misschien
+// Konijn Olietanker = nee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+class Demo{
+    static public void main(String[] ab){
+        Stoel s = new Stoel();
+        s.verstellen(14);
+        System.out.println(s.hoogte);
+        Konijn d= new Konijn();
+        d.voortbewegen();
+        System.out.println(d.aantalogen);
+        Meubel m = new Sofa();
+    }
+}
+
+// 1 body weg
+// 2 de class moet abstract worden
+// 3 in de child onstaat een implementatie verplichting
+abstract class Meubel{
+    abstract Dier verhuizen(int a);
+}
+
+class Sofa extends Meubel{
+    Dier verhuizen(int v) {
+        System.out.println("verhuizen in stoel");
+        return new Dier();
+    }
+}
+
+class Tafel extends Meubel{
+    Dier verhuizen(int t) {
+        return new Dier();
+    }
+}
+
+// shadowing
+class Dier{
+    int aantalogen = 27;
+    void voortbewegen() {
+        System.out.println("bewegen in dier"+aantalogen);
+    }
+}
+class Konijn extends Dier{
+    int staart;
+
+    void springen() {
+        System.out.println("springen in dier"+aantalogen);
+    }
+    void voortbewegen() { 
+        System.out.println("bewegen in konijn"+aantalogen);
+    }
+}
+
+
+
+class Stoel{
+    int hoogte = 15;
+    void verstellen(int hoogte) {
+        System.out.println(hoogte);
+        this.hoogte = hoogte;
+    }
+    void ietsanders() {
+//        System.out.println(gewicht);
+    }
+}

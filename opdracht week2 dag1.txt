@@ -1,0 +1,61 @@
+// iwp 
+//1 maak een klasse
+//2 maak een object
+//3 maak een variabele van een object type en instantieer het object en ken deze toe
+//4 geef in de klasse een kenmerk aan (field)
+//5 geef in de klasse een methode aan
+//6 vul van een object het kenmerk met een waarde van een kenmerk
+//7 roep een methode van een object aan
+//----- inleveren
+//8 maak een methode met een parameter (int string)
+//9 maak een methode met een returntype (int string)
+//10 roep ze aan en vang het resultaat op
+//11 -----update inleveren
+//12 maak een has-a relatie
+//13 maak een parameter van een eigenKlasseType
+//14 maak een returnType van een eigenKlasseType
+//15 maak een eigen constructor
+//16 roep de methode succesvol aan
+//17 vul de has-a relatie met een object
+//18 vang het ge-returnde object op in een variabele
+//--- update inleveren
+//19 overloading rijde()  rijden(6)  rijden("amsterdam",70)
+//20 shadowing
+//21 construtor
+
+===================================
+
+
+//1 maak een statische field
+//2 maak een final field
+//3 maak een static final field
+//4 wijzig de waarde van een statische field
+//5 toon via een Klasse een waarde van een field
+//6 toon via een Object een waarde van een field
+///-----------Update inleveren
+//7 maak een IS-A relatie
+//8 maak in de parent een field
+//9 maak ik de child een field
+//10 refereer via de parent instantieer via de Child
+//11 check waar je wel en niet bij kunt
+///==========Update inleveren
+//12 Maak een hulpclasse met een methode met de parent als Parameter
+//13 Maak een methode met de parent als returntype
+//14 Vang het resultaat op in een variabele
+//=====Optioneel
+//15 casten
+//16 gedrag in constructor
+//17 overriding
+
+==========================
+
+//1 maak een methode in de parent class
+//2 maak een object van de childclass en roep die aan
+//3 override de methode in de childclass
+//4 Zie dat Polymorfisme werkt
+// -------update inleveren
+//5 maak een klasse abstract, zie dat instantieren niet meer kan
+//6 maak een methode abstract, zie de drie effecten 
+//7 probeer te casten
+//8 probeer instanceof in te zetten
+//9 verwerk dit een een realistische hulpklasse (DierenAmbulance MeubelMaker)
